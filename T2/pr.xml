@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE projectRecord SYSTEM "pr.dtd">
+<projectRecord>
+    <metadata>
+        <keyname></keyname>
+        <title></title>
+        <date>
+            <beginDate></beginDate>
+            <endDate></endDate>
+        </date>
+        <supervisor>
+            <link url=""></link>
+        </supervisor>
+    </metadata>
+    <workteam>
+        <element>
+            <name></name>
+            <mail>
+                <link url=""></link>
+            </mail>
+            <link url=""></link>
+            <number></number>
+        </element>
+    </workteam>
+    <abstract>
+        <paragraph></paragraph>
+        <paragraph></paragraph>
+    </abstract>
+    <deliverables>
+        <link url=""></link>
+    </deliverables>
+</projectRecord>

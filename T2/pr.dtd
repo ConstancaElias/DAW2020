@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!ELEMENT projectRecord (metadata, workteam, abstract, deliverables)>
 
-<!ELEMENT metadata (keyname, title, subtitle*, date, supervisor)>
+<!ELEMENT metadata (keyname, title, subtitle?, date, supervisor)>
 <!ELEMENT workteam (element+)>
 <!ELEMENT abstract (paragraph, (paragraph)+)>
 <!ELEMENT deliverables (link+)>
@@ -25,7 +25,7 @@
 <!ELEMENT mail (link) >
 <!ELEMENT number (#PCDATA) >
 
-<!ELEMENT paragraph (text|bold|italic|underline|link) >
+<!ELEMENT paragraph (#PCDATA|bold|italic|underline|link)* >
 <!ELEMENT bold (#PCDATA)>
 <!ELEMENT italic (#PCDATA)>
 <!ELEMENT underline (#PCDATA)>

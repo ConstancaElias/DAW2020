@@ -1,32 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="w3.css"?>
 <!DOCTYPE projectRecord SYSTEM "pr.dtd">
 <projectRecord>
     <metadata>
-        <keyname></keyname>
-        <title></title>
+        <keyname>T2_DAW2020</keyname>
+        <title>XML e DTD para a criação de um Project Record</title>
+        <subtitle>Trabalho prático 2 da unidade curricular de Desenvolvimento de Aplicações Web (DAW)</subtitle>
         <date>
-            <beginDate></beginDate>
-            <endDate></endDate>
+            <beginDate>outubro 2020</beginDate>
+            <endDate>outubro 2020</endDate>
         </date>
         <supervisor>
-            <link url=""></link>
+            <link url="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</link>
         </supervisor>
     </metadata>
     <workteam>
         <element>
-            <name></name>
+            <name>Constança Elias</name>
             <mail>
-                <link url=""></link>
+                <link url="mailto:pg42820@alunos.uminho.pt">pg42820@alunos.uminho.pt</link>
             </mail>
-            <link url=""></link>
-            <number></number>
+            <link url="https://github.com/ConstancaElias/DAW2020">Conta do GitHub</link>
+            <number>PG42820</number>
         </element>
     </workteam>
     <abstract>
-        <paragraph></paragraph>
-        <paragraph></paragraph>
+        <paragraph>Um <bold>DTD</bold>(<italic>Document Type Definition</italic>) é um documento que define a estrutura, os elementos e os atributos de um ficheiro XML. Pode ser muito útil
+            para estabelecer uma convenção acerca da estrutura de um determinado tipo de documento (<underline>em XML</underline>) que é comum a um grande 
+            número de pessoas, como é o caso do <italic>Project Record</italic>. Este ficheiro contém toda a informação relevante acerca de um trabalho desenvolvido para a UC de DAW: metadados
+        (título, data, supervisor), um pequeno resumo e o resultado do trabalho.</paragraph> 
+        <paragraph>Este trabalho prático consiste na criação de um dtd que contenha a estrutura de um Project Record (baseado no exemplo
+            <link url="http://www4.di.uminho.pt/~jcr/PROJS/micei2002/guilherme/Project%20Record.htm">Project Record)</link>. O resultado final consiste num ficheiro xml do Project Record, feito com base no dtd criado, que contém a informação referente 
+            ao trabalho prático 2 da unidade curricular de DAW (a criação do dtd).</paragraph>
     </abstract>
     <deliverables>
-        <link url=""></link>
+        <link url="https://github.com/ConstancaElias/DAW2020/blob/main/T2/pr.dtd">DTD do Project Record</link>
     </deliverables>
 </projectRecord>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="w3.css"?>
+<!DOCTYPE projectRecord SYSTEM "pr.dtd">
+<projectRecord>
+    <metadata>
+        <keyname>T3_DAW2020</keyname>
+        <title>XSL para a criação de uma página WEB</title>
+        <subtitle>Relatório do trabalho prático nº3 da unidade curricular de Desenvolvimento de Aplicações Web</subtitle>
+        <date>
+            <beginDate>outubro 2020</beginDate>
+            <endDate>outubro 2020</endDate>
+        </date>
+        <supervisor>
+            <link>
+                <text>José Carlos Ramalho</text>
+                <url>http://www4.di.uminho.pt/~jcr/</url>
+            </link>
+        </supervisor>
+    </metadata>
+    <workteam>
+        <element>
+            <name>Constança Elias</name>
+            <mail>
+                <text>pg42820@alunos.uminho.pt</text>
+                <url><a href="mailto:pg42820@alunos.uminho.pt"></a></url>
+            </mail>
+        </element>
+    </workteam>
+    <abstract>
+        <paragraph>
+            <italico>XSL Transformations (eXtensible Stylesheet Language)</italico> é uma linguagem que permite fazer processamento estruturado de XML, de forma a criar páginas WEB.
+        </paragraph>
+        <paragraph>O objetivo deste trabalho é criar uma <italico>stylesheet</italico> XSL que transforme um <italico>dataset</italico> do 
+        Arqueossítio do Noroeste Português numa página web, com um índice de navegação entre os elementos. Este indíce deve estar por ordem alfabética e cada elemento contém 
+        uma hiperligação para a página respetiva.
+        </paragraph>
+    </abstract>
+    <deliverables>
+        <link>
+            <text></text>
+            <url></url>
+        </link>
+    </deliverables>
+</projectRecord>

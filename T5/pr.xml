@@ -3,7 +3,7 @@
 <pr>
     <meta>
         <key>DAW2020_T5</key>
-        <title>Criação de uma página web navegável a partir de um servidor NodeJs</title>
+        <title>Criação de uma página web navegável a partir de um servidor NodeJs e JSON-server</title>
         <subtitle>Relatório do trabalho prático nº5 da unidade curricular de Desenvolvimento de Aplicações Web</subtitle>
         <bdate>novembro 2020</bdate>
         <edate>novembro 2020</edate>
@@ -16,8 +16,8 @@
         </member>
     </team>
     <abstract>
-        <p>O NodeJS é uma framework em JavaScript, Open Source, que corre no servidor. </p>
-        <p>Este trabalho consiste na criação de servidor web, recorrendo ao NodeJS, capaz de responder a pedidos de páginas do cliente. Pretende-se criar uma página web navegável a partir da base de dados de alunos a frequentar determinados cursos de intrumentos musicais.</p>
+        <p>O NodeJS é uma framework em JavaScript, Open Source, que corre no servidor. O JSON-server é uma biblioteca de JavaScript que permite criar APIs de modo rápido e eficiente.</p>
+        <p>Este trabalho consiste na criação de servidor web, recorrendo ao NodeJS, capaz de responder a pedidos de páginas do cliente. Pretende-se criar uma página web navegável a partir da base de dados de alunos a frequentar determinados cursos de intrumentos musicais. Esta base de dados, em JSON, através da API criada com JSON-server, comunica com servidor principal, em NodeJS, usando o <i>package</i> axios. Como resultado, a página criada apresenta uma lista de 3 elementos que redirecionam, respetivamente, para a lista de alunos, a lista de cursos e a lista de instrumentos.</p>
     </abstract>
     <deliverables>
         <link url="https://github.com/ConstancaElias/DAW2020/blob/main/T4/server.js">Servidor em JavaScript</link>

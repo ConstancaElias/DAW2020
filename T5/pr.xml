@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "pr.dtd">
+<pr>
+    <meta>
+        <key>DAW2020_T5</key>
+        <title>Criação de uma página web navegável a partir de um servidor NodeJs</title>
+        <subtitle>Relatório do trabalho prático nº5 da unidade curricular de Desenvolvimento de Aplicações Web</subtitle>
+        <bdate>novembro 2020</bdate>
+        <edate>novembro 2020</edate>
+        <supervisor url="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
+    </meta>
+    <team>
+        <member id="PG42820">
+            <name>Constança Elias</name>
+            <email>pg42820@alunos.uminho.pt</email>
+        </member>
+    </team>
+    <abstract>
+        <p>O NodeJS é uma framework em JavaScript, Open Source, que corre no servidor. </p>
+        <p>Este trabalho consiste na criação de servidor web, recorrendo ao NodeJS, capaz de responder a pedidos de páginas do cliente. Pretende-se criar uma página web navegável a partir da base de dados de alunos a frequentar determinados cursos de intrumentos musicais.</p>
+    </abstract>
+    <deliverables>
+        <link url="https://github.com/ConstancaElias/DAW2020/blob/main/T4/server.js">Servidor em JavaScript</link>
+        <link url="https://github.com/ConstancaElias/DAW2020/blob/main/T4/arq.xsl">Stylesheet XSL para o página WEB dos Arqueossítios</link>
+        <link url="https://github.com/ConstancaElias/DAW2020/blob/main/T4/arq.xsl">Ficheiro XML dos Arqueossítios</link>
+    </deliverables>
+</pr>

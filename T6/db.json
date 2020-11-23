@@ -1,0 +1,59 @@
+{
+  "tarefas": [
+    {
+      "id": "8",
+      "tipo": "Pagamento",
+      "descricao": "Pagar a luz",
+      "quem": "Margarida",
+      "dataFim": "2020-11-24",
+      "dataIni": "2020-11-25",
+      "feita": "true"
+    },
+    {
+      "id": "9",
+      "tipo": "Limpeza",
+      "descricao": "Aspirar sala",
+      "quem": "Teresa",
+      "dataFim": "2020-11-25",
+      "dataIni": "2020-11-30",
+      "feita": "true"
+    },
+    {
+      "id": "3",
+      "tipo": "Descanso",
+      "descricao": "Passear",
+      "quem": "Filipa",
+      "dataFim": "2020-11-25",
+      "dataIni": "2020-11-30",
+      "feita": "true"
+    },
+    {
+      "id": "4",
+      "tipo": "Compras",
+      "descricao": "Leite, iogurte e queijo",
+      "quem": "Zé",
+      "dataFim": "2020-11-19",
+      "dataIni": "2020-12-01",
+      "feita": "true"
+    },
+    {
+      "id": "5",
+      "tipo": "Pagamento",
+      "descricao": "Pagar água",
+      "quem": "Marta",
+      "dataFim": "2020-11-30",
+      "dataIni": "2020-11-30",
+      "x": "11",
+      "y": "8"
+    },
+    {
+      "id": "6",
+      "tipo": "Compras",
+      "descricao": "Comprar fiambre",
+      "quem": "Lúcia",
+      "dataIni": "2020-11-29",
+      "dataFim": "2020-11-30",
+      "feita": "false"
+    }
+  ]
+}

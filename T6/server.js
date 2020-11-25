@@ -6,50 +6,6 @@ var static = require('./static')
 var template = require('./template')
 
 var {parse} = require('querystring')
-var idTarefa = 220
-/*
-// Template para o formulário de aluno ------------------
-function geraFormAluno( d ){
-    return `
-    <html>
-        <head>
-            <title>Registo de um aluno</title>
-            <meta charset="utf-8"/>
-            <link rel="stylesheet" href="../w3.css"/>
-        </head>
-        <body>
-        
-        </body>
-            <div class="w3-container w3-teal">
-                <h2>Registo de Aluno</h2>
-            </div>
-
-            <form class="w3-container" action="/alunos" method="POST">
-                <label class="w3-text-teal"><b>Nome</b></label>
-                <input class="w3-input w3-border w3-light-grey" type="text" name="nome">
-          
-                <label class="w3-text-teal"><b>Número / Identificador</b></label>
-                <input class="w3-input w3-border w3-light-grey" type="text" name="id">
-
-                <label class="w3-text-teal"><b>Curso</b></label>
-                <input class="w3-input w3-border w3-light-grey" type="text" name="curso">
-
-                <label class="w3-text-teal"><b>Link para o repositório no Git</b></label>
-                <input class="w3-input w3-border w3-light-grey" type="text" name="git">
-          
-                <input class="w3-btn w3-blue-grey" type="submit" value="Registar"/>
-                <input class="w3-btn w3-blue-grey" type="reset" value="Limpar valores"/> 
-            </form>
-
-            <footer class="w3-container w3-teal">
-                <address>Gerado por galuno::PRI2020 em ${d}</address>
-            </footer>
-        </body>
-    </html>
-    `
-}
-*/
-
 
 
 // Retrieves student info from request body --------------------------------

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "pr.dtd">
+<pr>
+    <meta>
+        <key>DAW2020_T5</key>
+        <title>Criação de uma SPA para gerir uma lista de tarefas</title>
+        <subtitle>Relatório do trabalho prático nº6 da unidade curricular de Desenvolvimento de Aplicações Web</subtitle>
+        <bdate>novembro 2020</bdate>
+        <edate>novembro 2020</edate>
+        <supervisor url="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
+    </meta>
+    <team>
+        <member id="PG42820">
+            <name>Constança Elias</name>
+            <email>pg42820@alunos.uminho.pt</email>
+        </member>
+    </team>
+    <abstract>
+        <p>O NodeJS é uma framework em JavaScript, Open Source, que corre no servidor. O JSON-server é uma biblioteca de JavaScript que permite criar APIs de modo rápido e eficiente.</p>
+        <p>Este trabalho pretende explorar o uso de forms HTML bem como o uso de PUT e DELETE e consolidar os conhecimentos aplicados no trabalho prático 5, relacionados com a criação de servidor web, recorrendo ao NodeJS, capaz de responder a pedidos de páginas do cliente. Pretende-se criar uma <i>single page application</i> que permita gerir uma lista de tarefas. Contém uma secção com as tarefas por realizar e outra com as tarefas realizadas. Permite adicionar novas tarefa e navegar pelas categorias da tarefa. Esta base de dados, em JSON, através da API criada com JSON-server, comunica com servidor principal, em NodeJS, usando o <i>package</i> axios. </p>
+    </abstract>
+    <deliverables>
+        <link url="https://github.com/ConstancaElias/DAW2020/blob/main/T6/server.js">Servidor em JavaScript</link>
+        <link url="https://github.com/ConstancaElias/DAW2020/blob/main/T6/template.js">Módulo com as funções responsáveis por criar o template HTML</link>
+    </deliverables>
+</pr>

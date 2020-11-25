@@ -116,6 +116,14 @@ exports.geraPagTarefas = function (tarefas, d){
                 }
               </script>
 
+             
+              <span id="editTaskForm">
+              </span>
+
+              <div id="novaTarefa">
+                <button type="button" class="btn btn-warning" onclick="showForm()">Adicionar Tarefa</button>
+              </div>
+
               <span id="newTaskForm" style="display:none;">
               <h3>Inserir Nova Tarefa:</h3>
               <form class="w3-container" action="/tarefaNova" method="POST" onsubmit="document.getElementById('newTaskForm').style.display = 'none';">
@@ -141,33 +149,30 @@ exports.geraPagTarefas = function (tarefas, d){
             
               <input class="w3-btn w3-blue-grey" type="submit" value="Registar"/>
               <input class="w3-btn w3-blue-grey" type="reset" value="Limpar valores"/> 
+            
             </form>
-
-             
+                
               </span>
-              <span id="editTaskForm">
-              </span>
-
-              <div id="novaTarefa">
-                <button type="button" class="btn btn-warning" onclick="showForm()">Adicionar Tarefa</button>
-              </div>
             
 
-              <div class="w3-row" style="margin-left:20px">
-              <div  class="w3-col m5 l5 w3-mobile">
-              <h4>Tarefas por Fazer</h4>
-              <table id="tarefas">
-              <tr>
-                  <th>Tipo</th>
-                  <th>Descrição</th>
-                  <th>Quem</th>
-                  <th>Data Início</th>
-                  <th>Data Fim</th>
-                  <th>Editar</th>
-                  <th>Apagar</th>
-                  <th>Feita</th>
-              </tr>
-`             
+              <div class="w3-row" style="margin:30px">
+              <h5><b>Tarefas por Fazer<b></h5>
+              <div  class="table-responsive">
+              <table class="table table-striped" id="tarefas">
+                <thead>
+                <tr>
+                    <th scope ="col">Tipo</th>
+                    <th scope ="col">Descrição</th>
+                    <th scope ="col">Quem</th>
+                    <th scope ="col">Data Início</th>
+                    <th scope ="col">Data Fim</th>
+                    <th scope ="col">Editar</th>
+                    <th scope ="col">Apagar</th>
+                    <th scope ="col">Feita</th>
+                </tr>
+                </thead>
+                <tbody>
+`              
               tarefas.forEach(t => {
                   if (t.feita == "false") {
                     page = taskEdit(t)
@@ -179,8 +184,8 @@ exports.geraPagTarefas = function (tarefas, d){
                       <td>${t.quem}</td>
                       <td>${t.dataIni}</td>
                       <td>${t.dataFim}</td>
-                      <td><img src="public/pencil.ico" width="50%" onclick="editTask('${t.id}', '${t.tipo}', '${t.descricao}', '${t.quem}', '${t.dataIni}', '${t.dataFim}', '${t.feita}')" onmouseover="this.style.opacity=0.6" onmouseout="this.style.opacity=1"></td>
-                      <td><form action="/delete/${t.id}" method="POST"><input type="image" src="public/trash.ico" width="45%"></form></td>
+                      <td><img src="public/pencil.ico" width="20px" onclick="editTask('${t.id}', '${t.tipo}', '${t.descricao}', '${t.quem}', '${t.dataIni}', '${t.dataFim}', '${t.feita}')" onmouseover="this.style.opacity=0.6" onmouseout="this.style.opacity=1"></td>
+                      <td><form action="/delete/${t.id}" method="POST"><input type="image" src="public/trash.ico" width="20px" onmouseover="this.style.opacity=0.6" onmouseout="this.style.opacity=1"></form></td>
                       <td>
                         <form action="/taskDone/${t.id}" method="POST">
                         <input type="hidden" name="id" value="${t.id}">
@@ -190,7 +195,7 @@ exports.geraPagTarefas = function (tarefas, d){
                         <input type="hidden" name="dataFim" value="${t.dataIni}">
                         <input type="hidden" name="dataIni" value="${t.dataFim}">
 
-                        <input type="image" src="check.png" width="35%" value="true" onclick="this.form.submit()">
+                        <input type="image" src="check.png" width="20px" value="true" onmouseover="this.style.opacity=0.6" onmouseout="this.style.opacity=1" onclick="this.form.submit()">
 
                         </form>
                       </td>
@@ -200,7 +205,9 @@ exports.geraPagTarefas = function (tarefas, d){
               });
 
 pagHTML += `
+      </tbody>
       </table>
+              </div>
               </div>
         
               <script>
@@ -210,21 +217,22 @@ pagHTML += `
                 }
               </script>
 
-              <div class="w3-col m2 l2 w3-mobile">
-              &nbsp;
-              </div>
+              <div class="w3-row" style="margin:30px">
+              <h5><b>Tarefas Feitas</b></h5>
+              <div  class="table-responsive">
+              <table class="table table-striped" id="tarefas">
+                <thead>
               
-              <div  class="w3-col m5 l5 w3-mobile">
-              <h4>Tarefas Feitas</h4>
-              <table id="tarefas">
-              <tr>
-                  <th>Tipo</th>
-                  <th>Descrição</th>
-                  <th>Quem</th>
-                  <th>Data Início</th>
-                  <th>Data Fim</th>
-                  <th>Apagar</th>
-              </tr>
+                  <tr>
+                      <th scope="col">Tipo</th>
+                      <th scope="col">Descrição</th>
+                      <th scope="col">Quem</th>
+                      <th scope="col">Data Início</th>
+                      <th scope="col">Data Fim</th>
+                      <th scope="col">Apagar</th>
+                  </tr>
+                </thead>
+                <tbody>
 `             
               tarefas.forEach(t => {
                   if (t.feita == "true") {
@@ -235,19 +243,20 @@ pagHTML += `
                       <td>${t.quem}</td>
                       <td>${t.dataIni}</td>
                       <td>${t.dataFim}</td>
-                      <td><form action="/delete/${t.id}" method="POST"><input type="image" src="public/trash.ico" width="10%"></form></td>
+                      <td><form action="/delete/${t.id}" method="POST"><input type="image" src="public/trash.ico" width="20px" onmouseover="this.style.opacity=0.6" onmouseout="this.style.opacity=1"></form></td>
                   </tr>
                   
     `           }  
             });   
   
     pagHTML += `
+          </tbody>
           </table>
           </div>
               </div>
      
           <div class="footer">
-              <address>Gerado por toDo::DAW2020 em ${d} --------------</address>
+              <address>Gerado por toDo::DAW2020 --------------</address>
           </div>
       </body>
       </html>

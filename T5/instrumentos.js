@@ -50,6 +50,23 @@ http.createServer(function(req, res) {
                 console.log("Erro na obtenção da lista de alunos: " + error);
             });
         
+        } else if (req.url.match(/\/alunos\/\w+$/)){
+            var idAluno = req.url.split("/")[2]
+            axios.get(`http://localhost:3000/alunos/${idAluno}`).then(function (resp) {
+                aluno = resp.data;
+                res.writeHead(200, {'Content-Type': 'text/html;charset=utf-8'})
+                res.write(`<h2> ${aluno.nome}</h2>`)
+                res.write(`<h4> Data Nascimento: ${aluno.dataNasc}</h4>`)
+                res.write(`<h4> Curso: ${aluno.curso}</h4>`)
+                res.write(`<h4> Ano Curso: ${aluno.anoCurso}</h4>`)
+                res.write(`<h4> Instrumento: ${aluno.instrumento}</h4>`)
+
+                res.write('<address>[<a href="/alunos">Voltar</a>]</address>')
+                res.end()
+            }).catch (function (error) {
+                console.log("Erro na obtenção da lista de alunos: " + error);
+            });
+        
         } else if (req.url == '/cursos'){
             axios.get('http://localhost:3000/cursos').then(function (resp) {
                 cursos = resp.data;

@@ -7,10 +7,6 @@ html, body {
   padding: 0px;
   font-family: 'Roboto', sans-serif;
   color: #444;
-  
- /* position: relative;
-  min-height: 100%;
-  min-height: 100vh;*/
 }
 
 .top-nav-collapse {
@@ -50,11 +46,6 @@ header a {
   font-size: 0.9em;
 }
 
-
-
-
-
-
 a {
   text-decoration: none;
   color: gray;
@@ -93,83 +84,6 @@ h3 {
   color: black;
   text-align: center;
 }
-
-.footer .footer-content {
-  height: 365px;
-  display: flex;
-}
-
-.footer .footer-content .footer-section {
-  flex: 1;
-}
-
-.footer .footer-content h1 {
-  color: white;
-}
-
-.footer .footer-content h2 {
-  color: white;
-  font-size: 1.6em;
-  letter-spacing: 1px;
-  padding-left: 20px;
-  text-align: left;
-  text-transform: uppercase;
-}
-
-.footer .footer-content .about h1 span{
-  color: white
-}
-
-.footer .footer-content .about .contact span{
-  display: block;
-  font-size: 1.1em;
-  margin-bottom: 8px;
-}
-
-.footer .footer-content .about ul a {
-  display: block;
-  color: white;
-  font-size: 1em;
-  transition: all .2s;
-  text-decoration: none;
-}
-
-.footer .footer-content .about ul a:hover {
-  color: #E6F3F6;
-  margin-left: 15px;
-  transition: all .2s;
-
-}
-
-.footer .footer-content .contact-form .contact-input {
-  background: #18a3c2;
-  margin-bottom: 10px;
-  line-height: 1.5rem;
-  padding: 3.0rem 1.4rem;
-  border: none;
-}
-
-.footer .footer-content .contact-form .contact-input:focus {
-  background: #BDE4ED;
-}
-
-.footer .footer-content .contact-form .contact-btn {
-  float: right;
-
-}
-
-.footer .footer-bottom {
-  background: #0B193A;
-  height: 35px;
-  line-height: 35px;
-  text-align: center;
-  color: white;
-  width: 100%;
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-}
-
 
 
 /*
@@ -239,6 +153,7 @@ h3 {
 }
 
 /* TABLES */
+/*
 #tarefas {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
@@ -261,5 +176,8 @@ h3 {
   text-align: left;
   background-color: orange;
   color: white;
+}*/
+#tarefas th {
+  background-color: orange;
+  color: white;
 }
-

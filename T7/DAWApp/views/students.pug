@@ -1,0 +1,77 @@
+extends layout
+
+block content
+    nav.navbar.navbar-dark.bg-primary
+      a(class="navbar-brand" href="#") DAW2020 - Students List
+    if list.length > 0
+      .w3-container.w3-margin
+        button(type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalNewStudent") New Student
+      .w3-container
+        table.w3-table-all
+          tr 
+            th Photo
+            th Number
+            th Name
+            th Git
+            th Edit
+            th Delete
+          each s in list
+            tr
+              td Photo
+              td= s.numero
+              td
+                a(href=`/students/${s.numero}`) #{s.nome}
+              td= s.git
+              td
+                button(data-id=`${s.numero};${s.nome};${s.git}` data-toggle="modal" class="open-AddStudentDialog" data-target="#modalEditStudent")
+                  i(class="glyphicon glyphicon-pencil")
+              td
+                form(action=`/students/${s.numero}?_method=DELETE`, method="POST")
+                  button(type="submit")
+                    i(class="fa fa-trash")
+                
+    else
+      .w3-container
+        p There are no students...
+
+      div(class="modal fade", id="modalNewStudent", tabindex="-1", role="dialog", aria-labelledby="exampleModalCenterTitle", aria-hidden="true")
+        div(class="modal-dialog modal-dialog-centered" role="document")
+          div(class="modal-content")
+            div(class="modal-header")
+              h5(class="modal-title" id="exampleModalLongTitle") New Student
+                button(type="button" class="close" data-dismiss="modal" aria-label="Close")
+                  span(aria-hidden="true") &times;
+ 
+            div(class="modal-body")
+              form(action="/students" method="POST")
+                p Student Number:
+                  input(type="text" name="numero")
+                p Name:
+                  input(type="text" name="nome")
+                p Git:
+                  input(type="text" name="git")
+                button(type="button" class="btn btn-primary" onclick="this.form.submit()") Submit
+
+      div(class="modal fade", id="modalEditStudent", tabindex="-1", role="dialog", aria-labelledby="exampleModalCenterTitle2", aria-hidden="true")
+        div(class="modal-dialog modal-dialog-centered" role="document")
+          div(class="modal-content")
+            div(class="modal-header")
+              h5(class="modal-title" id="exampleModalLongTitle2") Edit Student
+                button(type="button" class="close" data-dismiss="modal" aria-label="Close")
+                  span(aria-hidden="true") &times;
+ 
+            div(class="modal-body")
+              form(id="editStudentForm" action="/students?_method=PUT" method="POST")
+                p Student Number:
+                  input(type="text" id="editNumber" name="numero" value="")
+                p Name:
+                  input(type="text" id="editName" name="nome" value="")
+                p Git:
+                  input(type="text" id="editGit" name="git" value="")
+                button(type="button" class="btn btn-primary" onclick="this.form.submit()") Submit
+
+      
+
+      footer.w3-container.w3-teal
+        address Gerado por dawApp :: 2020-Nov, jcr
+

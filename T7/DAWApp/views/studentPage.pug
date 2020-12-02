@@ -1,0 +1,39 @@
+extends layout
+
+block content
+    nav(class="navbar navbar-dark" style="background-color: orange;")
+      a(class="navbar-brand" href=`/students/${student.numero}`) #{student.nome}
+    .w3-container 
+      table.table.table-striped
+        tr 
+          th Number
+            th Name
+            th Git
+        tr
+          td= student.numero
+          td= student.nome
+          td= student.git
+      p TPCs
+      table.table.table.striped
+        tr
+          each s, idx in student.tpc
+            th=idx
+        tr
+          each s in student.tpc
+            if s == 1
+              td
+                i(class="fa fa-check")
+            else
+              td
+                i(class="fa fa-times")
+
+      form(action=`${student.numero}?_method=PUT` enctype="multipart/form-data" method="POST")
+        input(type="file" name="foto" accept="image/*")
+        input(type="submit" value="Upload Photo")
+
+      form(method="GET", action="/students")
+        button(type="submit" class="btn btn-warning") HomePage
+
+    .footer
+      address Gerado por dawApp :: 2020-Nov, jcr
+

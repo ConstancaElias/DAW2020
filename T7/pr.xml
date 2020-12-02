@@ -3,7 +3,7 @@
 <pr>
     <meta>
         <key>DAW2020_T5</key>
-        <title>Criação de uma página web com base de dados em MongoDB</title>
+        <title>Criação de uma aplicação com base de dados em MongoDB</title>
         <subtitle>Relatório do trabalho prático nº7 da unidade curricular de Desenvolvimento de Aplicações Web</subtitle>
         <bdate>novembro 2020</bdate>
         <edate>novembro 2020</edate>
@@ -16,11 +16,10 @@
         </member>
     </team>
     <abstract>
-        <p>O NodeJS é uma framework em JavaScript, Open Source, que corre no servidor. O JSON-server é uma biblioteca de JavaScript que permite criar APIs de modo rápido e eficiente.</p>
-        <p>Este trabalho pretende criar uma página web com formulários, à semelhança do trabalho prático 5, mas desta vez recorrendo a MongoDB. relacionados com a criação de servidor web, recorrendo ao NodeJS, capaz de responder a pedidos de páginas do cliente. Pretende-se criar uma <i>single page application</i> que permita gerir uma lista de tarefas. Contém uma secção com as tarefas por realizar e outra com as tarefas realizadas. Permite adicionar novas tarefa e navegar pelas categorias da tarefa. Esta base de dados, em JSON, através da API criada com JSON-server, comunica com servidor principal, em NodeJS, usando o <i>package</i> axios. </p>
+        <p>Neste trabalho pretende-se criar uma aplicação com formulários, à semelhança do trabalho prático 6, mas desta vez recorrendo a MongoDB. Esta apresenta a lista de alunos inscritos na cadeira de DAW e para cada aluno é apresentada a sua informação. É possível inserir, editar e apagar registos na base de dados. Esta base de dados, em MongoDB, comunica com servidor principal, em NodeJS, usando express. </p>
     </abstract>
     <deliverables>
-        <link url="https://github.com/ConstancaElias/DAW2020/blob/main/T6/server.js">Servidor em JavaScript</link>
-        <link url="https://github.com/ConstancaElias/DAW2020/blob/main/T6/template.js">Módulo com as funções responsáveis por criar o template HTML</link>
+        <link url="https://github.com/ConstancaElias/DAW2020/blob/main/T7/DAWApp">Aplicação</link>
+        <link url="https://github.com/ConstancaElias/DAW2020/blob/main/T7/DAWApp/DAW2020.json">Dataset dos Alunos</link>
     </deliverables>
 </pr>

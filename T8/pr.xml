@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "pr.dtd">
+<pr>
+    <meta>
+        <key>DAW2020_T5</key>
+        <title>Criação de uma aplicação quer  permite o upload de ficheiros</title>
+        <subtitle>Relatório do trabalho prático nº8 da unidade curricular de Desenvolvimento de Aplicações Web</subtitle>
+        <bdate>novembro 2020</bdate>
+        <edate>novembro 2020</edate>
+        <supervisor url="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
+    </meta>
+    <team>
+        <member id="PG42820">
+            <name>Constança Elias</name>
+            <email>pg42820@alunos.uminho.pt</email>
+        </member>
+    </team>
+    <abstract>
+        <p>Este trabalho prático consiste em melhorar a aplicação web de gestão de ficheiros criada na aula prática 8, permitindo o upload dinâmico de vários ficheiros, isto é, de pastas diferentes. Para isso, adotei a estrutura utilizada no T7 (e não a utilizada na aula), fazendo a correspondência do que foi criado na aula para a estrutura de uma aplicação no Express</p>.
+        <p>Esta aplicação apresenta a lista contida na pasta para onde foi feito o <i>upload</i> dos ficheiros. Carregando na linha da tabela correspondente ao ficheiro, é apresentado um <i>modal</i> que mostra a imagem, no caso do ficheiro ser uma imagem, o título e o tipo de ficheiro que é. Contém também um botão que permite fazer o download do ficheiro. É possível fazer o upload de vários ficheiros e de várias pastas diferentes, sendo estes registados na base de dados, em MongoDB. Esta base de dados comunica com servidor principal, em NodeJS, usando express. O pacote <i>Multer</i> foi utilizado como <i>middleware</i>para lidar com o <i>upload</i>de ficheiros</p>.
+    </abstract>
+    <deliverables>
+        <link url="https://github.com/ConstancaElias/DAW2020/blob/main/T8">Aplicação</link>
+    </deliverables>
+</pr>

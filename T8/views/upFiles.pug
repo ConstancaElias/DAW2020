@@ -1,0 +1,21 @@
+extends layout
+
+block content
+    div
+        h3 File Upload
+    div(style="margin-left:5%;margin-right: 30%")
+        form(action="/files" method="POST" enctype="multipart/form-data")
+            div(id="uploadFiles")
+                div(class="form-group" style="background-color: #f5ebf1")
+                    label(for="description") Description
+                    input(type="text" id="description" class="form-control" name="desc")
+                div( class="form-group" style="background-color: #f5ebf1")
+                    label(for="selectFiles") Select file
+                    input(type="file" id="selectFiles" name="myFile")
+
+
+            div(class="margin:5px")
+                input(class="btn btn-circle btn-lg btn-light" type="button" id="oneMore"  value="+1")
+            div(class="margin:5px")
+                input(class="btn" id="normalButton" type="submit" value="Submit")
+
